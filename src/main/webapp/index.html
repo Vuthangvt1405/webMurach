@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap')
+	;
+</style>
+<style>
+body {
+	padding: 10px;
+	font-family: "Outfit", sans-serif;
+}
+
+img {
+	width: 100px;
+}
+
+h1 {
+	color: teal;
+}
+
+h2 {
+	max-width: 500px;
+	color: teal;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group {
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+}
+
+option {
+	width: 100px;
+}
+</style>
+<body>
+	<img alt=""
+		src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/278088100_660354014930294_7201503616104229665_n.jpg?_nc_cat=108&cb=99be929b-fc739e1c&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFIvaEfVkR5fsMUKc5SiHNoM6ZCYu3CVN4zpkJi7cJU3vrKqRhA0TPbSKePTsMHX8XmwJg0EMoBTALObSvbFFy5&_nc_ohc=IbSqxXhpCrEQ7kNvwEPh7rH&_nc_oc=Adnn_4mUPfxKN9LEmGgd2wLQcuxLToRx5-wWXS92ZfM2oMBmIKYA7H9JAVXPtN18SH0&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=vuwbdRwI1cnHelNCWNGZDw&oh=00_AfV7jf6A-ygyWNQ5kLrpNnvJu4HVjszuT2R7EijoG9Xy4g&oe=68B5C9DC">
+	<h1>Survey</h1>
+	<p>If you have a moment, we'd appreciate it if you would fill out
+		this survey.</p>
+	<h2>Your Information</h2>
+	<form action="submit-form" method="POST">
+		<div class="form-container">
+			<div class="form-group">
+				<label for="firstName">First Name</label> 
+				<input id="firstName" name="firstName" type="text" />
+			</div>
+
+			<div class="form-group">
+				<label for="lastName">Last Name</label> 
+				<input id="lastName" name="lastName" type="text" />
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email</label> 
+				<input id="email" name="email" type="text" />
+			</div>
+		</div>
+		<h2>How did you hear about us?</h2>
+		<div>
+			<input id="searchEngine" type="radio" name="source" value="searchEngine" /> 
+			<label>Search engine</label> 
+			<input id="wordOfMouth" type="radio" name="source" value="wordOfMouth" /> 
+			<label>Word of mouth</label> 
+			<input id="socialMedia" type="radio" name="source" value="socialMedia" /> 
+			<label>Social media</label> 
+			<input id="other" type="radio" name="source" value="other" /> 
+			<label>other</label>
+		</div>
+		<h2>Would you like to receive announcements about new about new
+			CDs and special offers?</h2>
+		<div>
+			<input type="checkbox" name="likeUpdate" value="yes" /> <label> YES, I'd
+				like updates.</label> <br> 
+			<input type="checkbox" name="emailAnnouncements" value="yes" /> <label>YES, please send me
+				email announcements.</label>
+		</div>
+		<br> <label for="country">Please contact me by:</label> 
+		<select id="country" name="contactMethod">
+			<option value="both" selected>Email or postal mail</option>
+			<option value="email">Email only</option>
+			<option value="postalMail">Postal mail only</option>
+		</select> <br> <br>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
