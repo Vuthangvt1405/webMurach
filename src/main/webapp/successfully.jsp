@@ -73,7 +73,7 @@ option {
 	<br>
 	
 	<h2>Preferred contact method:</h2>
-	<span>${emailAnnouncements}</span>
+	<span>${contactMethod}</span>
 
 </body>
 </html>
